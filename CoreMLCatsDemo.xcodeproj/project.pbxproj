@@ -12,6 +12,7 @@
 		32F77B611F0C1C1D006950B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F77B5F1F0C1C1D006950B5 /* Main.storyboard */; };
 		32F77B631F0C1C1D006950B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F77B621F0C1C1D006950B5 /* Assets.xcassets */; };
 		32F77B661F0C1C1D006950B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F77B641F0C1C1D006950B5 /* LaunchScreen.storyboard */; };
+		32F77B6E1F0C1EF6006950B5 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 32F77B6D1F0C1EF6006950B5 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		32F77B621F0C1C1D006950B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32F77B651F0C1C1D006950B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F77B671F0C1C1D006950B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F77B6D1F0C1EF6006950B5 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		32F77B5A1F0C1C1D006950B5 /* CoreMLCatsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				32F77B6D1F0C1EF6006950B5 /* Inceptionv3.mlmodel */,
 				32F77B5B1F0C1C1D006950B5 /* AppDelegate.swift */,
 				32F77B5D1F0C1C1D006950B5 /* ViewController.swift */,
 				32F77B5F1F0C1C1D006950B5 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					32F77B571F0C1C1D006950B5 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32F77B5E1F0C1C1D006950B5 /* ViewController.swift in Sources */,
+				32F77B6E1F0C1EF6006950B5 /* Inceptionv3.mlmodel in Sources */,
 				32F77B5C1F0C1C1D006950B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +274,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoreMLCatsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.dmrozov.CoreMLCatsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,10 +291,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoreMLCatsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.dmrozov.CoreMLCatsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +323,7 @@
 				32F77B6C1F0C1C1D006950B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

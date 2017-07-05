@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CoreMLCatsDemo
 //
-//  Created by Dmitriy Lis on 04/07/2017.
+//  Created by Dmitriy Rozov on 04/07/2017.
 //  Copyright © 2017 Dmitriy Rozov. All rights reserved.
 //
 
