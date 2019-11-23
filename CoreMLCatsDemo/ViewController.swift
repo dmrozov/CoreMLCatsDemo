@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         results[0...3].forEach {
             let identifer = $0.identifier.lowercased()
             if identifer.range(of: " cat") != nil || identifer.range(of: "cat ") != nil || identifer == "cat" {
-                resifultString = "Это кот!"
+                resultString = "Это кот!"
             }
         }
         DispatchQueue.main.async {
